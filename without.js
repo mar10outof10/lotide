@@ -34,11 +34,11 @@ const without = function(source, itemsToRemove) {
   return missingItems;
 };
 
-assertArraysEqual((without([1, 2, 3], [1])), [2, 3]); // true
-assertArraysEqual((without(["1", "2", "3"], [1, 2, "3"])), ["1", "2"]); //true
-assertArraysEqual((without(["1", "2", "3"], [1, "2", "3"])), ["1", "2"]); //false
+// assertArraysEqual((without([1, 2, 3], [1])), [2, 3]); // true
+// assertArraysEqual((without(["1", "2", "3"], [1, 2, "3"])), ["1", "2"]); //true
+// assertArraysEqual((without(["1", "2", "3"], [1, "2", "3"])), ["1", "2"]); //false
 
-assertArraysEqual((without([1, [2, 3]], [1, [2, 3]])), []); //true
-assertArraysEqual((without([1, [2, 3]], [1, [2, 3]])), [1]); //false
+// assertArraysEqual((without([1, [2, 3]], [1, [2, 3]])), []); //true
+// assertArraysEqual((without([1, [2, 3]], [1, [2, 3]])), [1]); //false
 
-assertArraysEqual((without([1, [5, 2, 3]], [1, []])), [5, [2, 3]]); // false
+// assertArraysEqual((without([1, [5, 2, 3]], [1, []])), [5, [2, 3]]); // false
