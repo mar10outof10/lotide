@@ -16,7 +16,7 @@ const countLetters = function(string) {
     }
   }
   return countedLetters;
-}
+};
 
 //all true
 assertEqual(countLetters('asdfasdfasdf')['a'], 3);

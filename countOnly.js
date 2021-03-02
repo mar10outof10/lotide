@@ -47,13 +47,13 @@ const countOnly2 = function(allItems, itemsToCount) {
   }
 
   return totalCount;
-}
+};
 
 
 const firstNames = [
   "Karl",
   "Salima",
-  "Agouhanna",  
+  "Agouhanna",
   "Fang",
   "Kavith",
   "Jason",
