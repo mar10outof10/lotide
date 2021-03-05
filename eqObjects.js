@@ -53,7 +53,7 @@ const eqObjects = function(object1, object2) {
 
   return true;
 };
-
+// All assertions should pass.
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 assertEqual(eqObjects(ab, ba), true);
@@ -73,3 +73,8 @@ const cba2 = { c: 5, b: [2, 3], a: { b: "3", d: "5" } };
 assertEqual(eqObjects(abc2, cba2), false);
 const cba3 = { c: 5, b: [2, 3], a: { b: "4", d: "5" } };
 assertEqual(eqObjects(abc2, cba3), false);
+
+
+assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true);
+assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false); 
+assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false); 
